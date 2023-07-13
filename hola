@@ -1,35 +1,74 @@
-
-<!doctype html>
-<html dir="ltr" lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title>Nueva pestaña</title>
-    <style>
-      body {
-        background: #35363A;
-        margin: 0;
-      }
-
-      #backgroundImage {
-        border: none;
-        height: 100%;
-        pointer-events: none;
-        position: fixed;
-        top: 0;
-        visibility: hidden;
-        width: 100%;
-      }
-
-      [show-background-image] #backgroundImage {
-        visibility: visible;
-      }
-    </style>
-  </head>
-  <body>
-    <iframe id="backgroundImage" src=""></iframe>
-    <ntp-app></ntp-app>
-    <script type="module" src="new_tab_page.js"></script>
-    <link rel="stylesheet" href="chrome://resources/css/text_defaults_md.css">
-    <link rel="stylesheet" href="shared_vars.css">
-  </body>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Página web para un programador</title>
+</head>
+<body>
+  <header>
+    <h1>Mi nombre es [Javier]</h1>
+    <p>Soy un programador con experiencia en [Java].</p>
+  </header>
+  <main>
+    <section id="portafolio">
+      <h2>Portafolio</h2>
+      <ul>
+        <li>
+          <a href="[Enlace al proyecto 1]">Proyecto 1</a>
+          <p>Una breve descripción del proyecto 1.</p>
+        </li>
+        <li>
+          <a href="[Enlace al proyecto 2]">Proyecto 2</a>
+          <p>Una breve descripción del proyecto 2.</p>
+        </li>
+        <li>
+          <a href="[Enlace al proyecto 3]">Proyecto 3</a>
+          <p>Una breve descripción del proyecto 3.</p>
+        </li>
+      </ul>
+    </section>
+    <section id="cv">
+      <h2>CV</h2>
+      <p>Educación</p>
+      <ul>
+        <li>
+          [Educación del programador]
+        </li>
+      </ul>
+      <p>Experiencia laboral</p>
+      <ul>
+        <li>
+          [Experiencia laboral del programador]
+        </li>
+      </ul>
+      <p>Habilidades</p>
+      <ul>
+        <li>
+          [Habilidades del programador]
+        </li>
+      </ul>
+      <p>Premios y reconocimientos</p>
+      <ul>
+        <li>
+          [Premios y reconocimientos del programador]
+        </li>
+      </ul>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Dirección de correo electrónico: [sgjavi03@gmail.com]</p>
+      <p>Número de teléfono: [Número de teléfono del programador]</p>
+      <p>Dirección: [Dirección del programador]</p>
+      <form action="[Enlace al formulario de contacto]" method="post">
+        <input type="text" name="nombre" placeholder="Tu nombre">
+        <input type="email" name="correo" placeholder="Tu correo electrónico">
+        <input type="text" name="asunto" placeholder="Asunto">
+        <textarea name="mensaje" placeholder="Mensaje"></textarea>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>Copyright &copy; [2023] [Javier Serrano]. Todos los derechos reservados.</p>
+  </footer>
+</body>
 </html>
